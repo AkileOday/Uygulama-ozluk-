@@ -54,7 +54,7 @@ Public Class Form1
 			cnn.Open()
 		End If
 		ds.Clear()
-		rdr.Close()
+		'rdr.Close()
 		cmd.Connection = cnn
 			cmd.CommandType = CommandType.Text
 		cmd.Parameters.Clear()
@@ -110,4 +110,20 @@ Public Class Form1
 			End If
 		End If
     End Sub
+
+
+	Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+		If DataGridView1.RowCount = 0 Then Return
+
+		IDLabel.Text = DataGridView1.SelectedRows(0).Cells("Id").Value
+			TextBox1.Text = DataGridView1.SelectedRows(0).Cells("isim").Value
+			TextBox2.Text = DataGridView1.SelectedRows(0).Cells("yas").Value
+			If (DataGridView1.SelectedRows(0).Cells("uyruk").Value.ToString.ToUpper = "KKTC") Then
+				KKTCRadioButton.Checked = True
+			ElseIf (DataGridView1.SelectedRows(0).Cells("uyruk").Value.ToString.ToUpper = "TC") Then
+				TCRadioButton.Checked = True
+
+			End If
+
+	End Sub
 End Class

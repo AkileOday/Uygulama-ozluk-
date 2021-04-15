@@ -23,6 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+		Me.Button1 = New System.Windows.Forms.Button()
+		Me.silButton = New System.Windows.Forms.Button()
 		Me.IDLabel = New System.Windows.Forms.Label()
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.TCRadioButton = New System.Windows.Forms.RadioButton()
@@ -34,8 +36,6 @@ Partial Class Form1
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label1 = New System.Windows.Forms.Label()
 		Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-		Me.silButton = New System.Windows.Forms.Button()
-		Me.Button1 = New System.Windows.Forms.Button()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
@@ -59,6 +59,26 @@ Partial Class Form1
 		Me.GroupBox1.Size = New System.Drawing.Size(657, 219)
 		Me.GroupBox1.TabIndex = 0
 		Me.GroupBox1.TabStop = False
+		'
+		'Button1
+		'
+		Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.Button1.Location = New System.Drawing.Point(311, 57)
+		Me.Button1.Name = "Button1"
+		Me.Button1.Size = New System.Drawing.Size(75, 55)
+		Me.Button1.TabIndex = 11
+		Me.Button1.Text = "Bilgi Getir"
+		Me.Button1.UseVisualStyleBackColor = True
+		'
+		'silButton
+		'
+		Me.silButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.silButton.Location = New System.Drawing.Point(521, 178)
+		Me.silButton.Name = "silButton"
+		Me.silButton.Size = New System.Drawing.Size(73, 35)
+		Me.silButton.TabIndex = 6
+		Me.silButton.Text = "Sil"
+		Me.silButton.UseVisualStyleBackColor = True
 		'
 		'IDLabel
 		'
@@ -167,26 +187,6 @@ Partial Class Form1
 		Me.DataGridView1.Name = "DataGridView1"
 		Me.DataGridView1.Size = New System.Drawing.Size(430, 150)
 		Me.DataGridView1.TabIndex = 5
-		'
-		'silButton
-		'
-		Me.silButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.silButton.Location = New System.Drawing.Point(521, 178)
-		Me.silButton.Name = "silButton"
-		Me.silButton.Size = New System.Drawing.Size(73, 35)
-		Me.silButton.TabIndex = 6
-		Me.silButton.Text = "Sil"
-		Me.silButton.UseVisualStyleBackColor = True
-		'
-		'Button1
-		'
-		Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Button1.Location = New System.Drawing.Point(311, 57)
-		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(75, 55)
-		Me.Button1.TabIndex = 11
-		Me.Button1.Text = "Bilgi Getir"
-		Me.Button1.UseVisualStyleBackColor = True
 		'
 		'Form1
 		'
